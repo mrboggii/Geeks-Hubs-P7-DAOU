@@ -19,40 +19,41 @@ html{
   }
   .header{
     grid-area: header;
-    background-color: #203040;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #BDA535;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
   }
   .brand a{
-    color: #ffffff;
+    color: #BDA535;
     font-size: 3rem;
     font-weight: bold;
     text-decoration: none;
   }
   .header-links a{
-    color:#ffffff;
+    color:#;
     text-decoration: none;
     padding: 1rem;
   
   }
   .header-links a:hover{
-    color:#ff8000;
+    color:#D68501;
   }
   .main{
     grid-area: main;
   }
   .footer{
     grid-area: footer;
-    background-color: #203040;
+    background-color: #BDA535;
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   a{
+    color:#BDA535;
     text-decoration: none;
   }
   a:hover{
@@ -80,6 +81,7 @@ html{
     height: 100%;
   }
   .product-name{
+    color:#BDA535;
     font-size: 2rem;
     font-weight: bold;
   }
@@ -105,14 +107,14 @@ html{
     padding: .5rem;
     background: none;
     border: none;
-    color:#ffffff;
+    color:#BDA535;
     cursor: pointer;
   }
   .sidebar{
     position: fixed;
     transform: translateX(-30rem);
     width: 30rem;
-    background-color: #f0f0f0;
+    background-image: linear-gradient(to bottom right, white, #BDA535);
     height: 100%;
   }
   .sidebar.open{
@@ -121,7 +123,7 @@ html{
   
   .sidebar-close-button{
     border-radius: 50%;
-    border: .1rem #000000 solid;
+    border: .1rem #BDA535 solid;
     width: 3rem;
     height: 3rem;
     padding: .5rem;
