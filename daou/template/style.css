@@ -39,7 +39,7 @@ html{
   
   }
   .header-links a:hover{
-    color:#D68501;
+    color:#54595F;
   }
   .main{
     grid-area: main;
@@ -52,12 +52,12 @@ html{
     justify-content: center;
     align-items: center;
   }
-  a{
+  a, h3{
     color:#BDA535;
     text-decoration: none;
   }
-  a:hover{
-    color:#ff8000
+  a:hover, h3:hover{
+    color:#54595F
   }
   /* Home Screen */
   .products {
