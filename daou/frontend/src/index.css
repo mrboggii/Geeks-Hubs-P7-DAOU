@@ -112,6 +112,7 @@ a:hover, h3:hover{
 }
 .sidebar{
   position: fixed;
+  transition: all 1s;
   transform: translateX(-30rem);
   width: 30rem;
   background-image: linear-gradient(to bottom right, white, #BDA535);
@@ -122,6 +123,7 @@ a:hover, h3:hover{
 }
 
 .sidebar-close-button{
+  color: #BDA535;
   border-radius: 50%;
   border: .1rem #BDA535 solid;
   width: 3rem;
