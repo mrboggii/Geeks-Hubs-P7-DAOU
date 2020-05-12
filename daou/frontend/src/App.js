@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import data from './data';
 import './App.css';
 
 function App() {
@@ -41,76 +41,22 @@ function App() {
     <main className="main">
       <div className="content">
         <ul className="products">
-          <li>
+          {
+            data.products.map(product =>
+              <li>
             <div className="product">
-              <img className="product-image" src="/images/100ml.jpg" alt="product" />
+              <img className="product-image" src={product.image} alt="product" />
               <div className="product-name">
-                <a href="product.html">Aceite de Argán 100ml</a>
+                <a href="product.html">{product.name}</a>
               </div>
-              <div className="product-brand">Cristal</div>
-              <div className="product-price">€16,99</div>
-              <div className="product-rating">4.5 stars (10 Reviews)</div>
+              <div className="product-brand">{product.tipo}</div>
+              <div className="product-price">€{product.price}</div>
+              <div className="product-rating">{product.rating} Stars {product.numReviews}</div>
             </div>
           </li>
-          <li>
-            <div class="product">
-              <img className="product-image" src="/images/50ml.jpg" alt="product" />
-              <div className="product-name">
-                <a href="product.html">Aceite de Argán 50ml</a>
-              </div>
-              <div className="product-brand">Cristal</div>
-              <div className="product-price">€11,99</div>
-              <div className="product-rating">4.5 Stars (10 Reviews)</div>
-            </div>
-          </li>
-          <li>
-            <div className="product">
-              <img className="product-image" src="/images/30ml.jpg" alt="product" />
-              <div className="product-name">
-                <a href="product.html">Aceite Argán 30ml</a>
-              </div>
-              <div className="product-brand">Cristal</div>
-              <div className="product-price">€7,99</div>
-              <div className="product-rating">4.5 Stars (10 Reviews)</div>
-            </div>
-          </li>
-          <li>
-            <div className="product">
-              <img className="product-image" src="/images/Plata60ml.jpg" alt="product" />
-              <div className="product-name">
-                <a href="product.html">Aceite de Argán 60ml con Plata artesanal</a>
-              </div>
-              <div className="product-brand">Plata</div>
-              <div className="product-price">$60</div>
-              <div class="product-rating">4.5 Stars (10 Reviews)</div>
-            </div>
-          </li>
-          <li>
-            <div className="product">
-              <img className="product-image" src="/images/Plata30ml.jpg" alt="product" />
-              <div className="product-name">
-                <a href="product.html">Aceite de Argán 30ml con Plata artesanal</a>
-              </div>
-              <div className="product-brand">Plata</div>
-              <div className="product-price">$60</div>
-              <div className="product-rating">4.5 Stars (10 Reviews)</div>
-            </div>
-          </li>
-          <li>
-            <div className="product">
-              <img className="product-image" src="/images/pack3.jpg" alt="product" />
-              <div className="product-name">
-                <a href="product.html">Pack de 3</a>
-              </div>
-              <div className="product-brand">Cristal</div>
-              <div className="product-price">€29.99</div>
-              <div className="product-rating">4.5 Stars (10 Reviews)</div>
-            </div>
-          </li>
-
+          )}          
         </ul>
       </div>
-
     </main>
     <footer class="footer">
       © DAOU Argán 2020 
