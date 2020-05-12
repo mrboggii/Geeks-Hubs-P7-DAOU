@@ -1,19 +1,14 @@
 import React from 'react';
 import data from './data';
-import{ BrowserRouter, Route } from 'react-router-dom';
+import{ BrowserRouter, Route, Link } from 'react-router-dom';
 import './App.css';
 import HomeScreen from './Screens/HomeScreen';
 import ProductScreen from './Screens/ProductScreen';
 
 function App() {
-
   const openMenu = () => {document.querySelector(".sidebar").classList.add("open"); }
-
   const closeMenu = () => {document.querySelector(".sidebar").classList.remove("open"); }
-  
-
-
-  return (
+   return (
     <BrowserRouter>
     <div className="grid-container">
     <header className="header">
@@ -21,7 +16,7 @@ function App() {
         <button onClick={openMenu}>
           &#9776;
         </button>
-        <a href="index.html">DAOU</a>
+        <Link to="/" >DAOU</Link>
       </div>
       <div className="header-links">
         <a href="carrito.html">CARRITO</a>
@@ -55,5 +50,4 @@ function App() {
   </BrowserRouter>
   );
 }
-
 export default App;
