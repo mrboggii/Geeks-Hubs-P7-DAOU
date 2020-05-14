@@ -15,7 +15,7 @@ function App() {
         <button onClick={openMenu}>
           &#9776;
         </button>
-        <Link to="/" >DAOU</Link>
+        <Link to="/">DAOU</Link>
       </div>
       <div className="header-links">
         <a href="carrito.html">CARRITO</a>
