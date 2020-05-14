@@ -6,7 +6,8 @@ export default {
         price:11.99,
         tipo: 'Bote Cristal',
         rating: 4,
-        numReviews: 8
+        numReviews: 8,
+        countInStock: 0, 
     },
     {
         _id:'2',
@@ -15,7 +16,8 @@ export default {
         price:14.99,
         tipo: 'Bote Cristal',
         rating: 4.5,
-        numReviews: 9
+        numReviews: 9,
+        countInStock: 6, 
     },
     {
         _id:'3',
@@ -24,7 +26,8 @@ export default {
         price:17.99,
         tipo: 'Bote Cristal',
         rating: 5,
-        numReviews: 10
+        numReviews: 10,
+        countInStock: 6, 
     },
     {
         _id:'4',
@@ -33,7 +36,8 @@ export default {
         price:29.99,
         tipo: 'Bote Cristal',
         rating: 5,
-        numReviews: 10
+        numReviews: 10,
+        countInStock: 6, 
     },
     {
         _id:'5',
@@ -42,7 +46,8 @@ export default {
         price:17.99,
         tipo: 'Cristal y Plata',
         rating: 4.5,
-        numReviews: 8
+        numReviews: 8,
+        countInStock: 6, 
     },
     {
         _id:'6',
@@ -51,6 +56,7 @@ export default {
         price:19.99,
         tipo: 'Cristal y Plata',
         rating: 5,
-        numReviews: 10
+        numReviews: 10,
+        countInStock: 6, 
     }]
 }
