@@ -1,5 +1,4 @@
 import React from 'react';
-import data from './data';
 import{ BrowserRouter, Route, Link } from 'react-router-dom';
 import './App.css';
 import HomeScreen from './Screens/HomeScreen';
@@ -43,7 +42,7 @@ function App() {
         <Route path="/" exact={true} component={HomeScreen} />
       </div>
     </main>
-    <footer class="footer">
+    <footer className="footer">
       © DAOU Argán 2020 
     </footer>
   </div>
