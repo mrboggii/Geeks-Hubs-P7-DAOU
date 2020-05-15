@@ -54,22 +54,22 @@ const handleAddToCart = () =>{
             </div>   
             <div className="details-action">
                 <ul>
-                <li>Precio: {product.price} € </li>
-                </ul>
-                <ul>
-                <li>Estado: {product.countInStock > 0 ? "En Stock": "Fuera de Stock"} </li>
-                </ul>
-                <ul>
-                <li>Cantidad: 
-                    <select value={qty} onChange={(e) => { setQty(e.target.value)}}>
+                <li>Precio: {product.price}  </li>
+                <li>Estado: {product.countInStock > 0 ? "En Stock" :  "Fuera de Stock"} </li>
+                <li>
+                    Cantidad:<select value={qty} onChange={(e) => { setQty(e.target.value) }}>
                         {[...Array(product.countInStock).keys()].map(x=>
-                            <option key={x+1} value={x+1}>{x+1}</option>
+                            <option key={x + 1} value={x + 1}>{x + 1}</option>
                             )}
                     </select>
                 </li>
-                <ul></ul>
+                 {
+                     console.log(product.countInStock > 0)
+                 }
                 <li>
-                    {product.countIntStock > 0 && <button onClick={handleAddToCart} className="button">Añadir al carrito</button>}
+                    {
+                    product.countInStock > 0 && <button onClick={handleAddToCart} className="button-primary">Añadir al carrito</button>
+                    }
                 </li>
                 </ul>
             </div>
@@ -82,4 +82,4 @@ const handleAddToCart = () =>{
         
 }
 
-export default ProductScreen
+export default ProductScreen;

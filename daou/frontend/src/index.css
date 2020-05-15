@@ -208,3 +208,10 @@ padding: 2rem;
 .button:hover{
   border-radius: .1rem rgb(133, 115, 37) 
 }
+
+.button-primary {
+color: white;
+background-color: #BDA535;
+
+
+}
