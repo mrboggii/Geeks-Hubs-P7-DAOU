@@ -68,7 +68,7 @@ const handleAddToCart = () =>{
                  }
                 <li>
                     {
-                    product.countInStock > 0 && <button onClick={handleAddToCart} className="button-primary">Añadir al carrito</button>
+                    product.countInStock > 0 && <button onClick={handleAddToCart} className="button primary">Añadir al carrito</button>
                     }
                 </li>
                 </ul>
