@@ -4,6 +4,7 @@ import './App.css';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import CartScreen from './screens/CartScreen';
+import SigninScreen from './screens/SigninScreen.js';
 
 function App() {
   const openMenu = () => {document.querySelector(".sidebar").classList.add("open"); }
@@ -20,7 +21,8 @@ function App() {
       </div>
       <div className="header-links">
         <a href="carrito.html">CARRITO</a>
-        <a href="signin.html">ENTRAR</a>
+        <Link to="/signin">
+        <a href="signin.html">ENTRAR</a></Link>
       </div>
     </header>
     <aside className="sidebar">
@@ -39,6 +41,7 @@ function App() {
     </aside>
     <main className="main">
       <div className="content">
+        <Route path="/signin" component={SigninScreen} />
         <Route path="/product/:id" component={ProductScreen} />
         <Route path="/cart/:id?" component={CartScreen} />
         <Route path="/" exact={true} component={HomeScreen} />
