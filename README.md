@@ -30,4 +30,4 @@ Un e-commerce sencillo y minimalista pensado para el mercado del aceite de argá
 
 ## AUTOR
 
-* **Bogdan Prutean** - *Full Stack developer* - [Personal Website](bogdanprutean.online)
+* **Bogdan Prutean** - *Full Stack developer* - (bogdanprutean.online)
