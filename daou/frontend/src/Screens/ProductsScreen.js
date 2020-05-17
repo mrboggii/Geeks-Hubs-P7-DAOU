@@ -14,10 +14,14 @@ function ProductsScreen(props) {
   const { loading, products, error } = productList;
 
   const productSave = useSelector(state => state.productSave);
-  const { loading: loadingSave, success: successSave, error: errorSave } = productSave;
+  const { 
+    loading: loadingSave,
+     success: successSave,
+      error: errorSave 
+    } = productSave;
 
-  const productDelete = useSelector(state => state.productDelete);
-const { loading: loadingDelete, success: successDelete, error: errorDelete } = productDelete;
+ /* const productDelete = useSelector(state => state.productDelete);
+const { loading: loadingDelete, success: successDelete, error: errorDelete } = productDelete;*/
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -28,7 +32,7 @@ const { loading: loadingDelete, success: successDelete, error: errorDelete } = p
     return () => {
       //
     };
-  }, [successSave, successDelete]);
+  }, [/*successSave, successDelete*/]);
 
   const openModal = (product) => {
     setModalVisible(true);
