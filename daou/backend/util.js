@@ -15,6 +15,32 @@ const getToken = (user) => {
     })
 }
 
-export {
-    getToken
-}
+const isAuth = (req, res, next) => {
+    const token = req.headers.authorization;
+  
+    if (token) {
+      const onlyToken = token.slice(7, token.length);
+      jwt.verify(onlyToken, config.JWT_SECRET, (err, decode) => {
+        if (err) {
+          return res.status(401).send({ msg: 'Error en el Token' });
+        }
+        req.user = decode;
+        next();
+        return
+      });
+    } else {
+      return res.status(401).send({ msg: "Token Ok." });
+    }
+  }
+  
+  const isAdmin = (req, res, next) => {
+    console.log(req.user)
+    if (req.user && req.user.isAdmin) {
+      return next();
+    }
+    return res.status(401).send({ msg: 'Error-Token de Admin-Error' })
+  }
+  
+  export {
+    getToken, isAuth, isAdmin
+  }
