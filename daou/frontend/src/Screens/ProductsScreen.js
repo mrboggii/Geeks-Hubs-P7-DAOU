@@ -98,7 +98,7 @@ function ProductsScreen(props) {
             </li>
             <li>
               <label htmlFor="countInStock">
-                CountInStock
+                Stock
           </label>
               <input type="text" name="countInStock" value={countInStock} id="countInStock" onChange={(e) => setCountInStock(e.target.value)}>
               </input>
@@ -124,7 +124,7 @@ function ProductsScreen(props) {
             <th>Name</th>
             <th>Price</th>
             <th>Cat</th>
-            <th>Action</th>
+            <th>--</th>
           </tr>
         </thead>
         <tbody>
