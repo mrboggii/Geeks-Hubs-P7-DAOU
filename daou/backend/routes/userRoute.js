@@ -15,7 +15,7 @@ if(signinUser){
         name: signinUser.name,
         email: signinUser.email,
         isAdmin: signinUser.isAdmin,
-        token: getToken(user)
+        token: getToken(signinUser)
     })
 } else {
     res.status(401).send({msg:'e-mail y/o contraseña incorrecto/s'})
