@@ -25,6 +25,7 @@ function userSigninReducer(state = {}, action) {
     default: return state;
   }
 }
+*/
 
 function userRegisterReducer(state = {}, action) {
   switch (action.type) {
@@ -37,7 +38,7 @@ function userRegisterReducer(state = {}, action) {
     default: return state;
   }
 }
-*/
+
 export {
-  userSigninReducer/*, userRegisterReducer, userUpdateReducer*/
+  userSigninReducer, userRegisterReducer/*, userUpdateReducer*/
 }
