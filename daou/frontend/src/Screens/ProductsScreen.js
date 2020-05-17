@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { saveProduct, listProducts, deleteProdcut } from '../actions/productActions';
+import { saveProduct, listProducts, deleteProduct } from '../actions/productActions';
 
 function ProductsScreen(props) {
   const [modalVisible, setModalVisible] = useState(false);
@@ -17,7 +17,7 @@ function ProductsScreen(props) {
   const { loading: loadingSave, success: successSave, error: errorSave } = productSave;
 
   const productDelete = useSelector(state => state.productDelete);
-  const { loading: loadingDelete, success: successDelete, error: errorDelete } = productDelete;
+const { loading: loadingDelete, success: successDelete, error: errorDelete } = productDelete;
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -48,7 +48,7 @@ function ProductsScreen(props) {
     }));
   }
   const deleteHandler = (product) => {
-    dispatch(deleteProdcut(product._id));
+    dispatch(deleteProduct(product._id));
   }
   return <div className="content content-margined">
 
@@ -93,7 +93,7 @@ function ProductsScreen(props) {
               <label htmlFor="cat">
                 Categoria
           </label>
-              <input type="text" name="cat" value={brand} id="cat" onChange={(e) => setCat(e.target.value)}>
+              <input type="text" name="cat" value={cat} id="cat" onChange={(e) => setCat(e.target.value)}>
               </input>
             </li>
             <li>
