@@ -15,11 +15,25 @@ Un e-commerce sencillo y minimalista pensado para el mercado del aceite de argá
 
 
 👤El usuario puede registrarse, usar la vista home para avistar los distintos productos, el carrito para obtener un resumen de su compra, y una gestion del producto aparte para el usuario admin desde la cual puede añadir, eliminar, o editar productos desde la misma web.
+
 <img src="https://i.imgur.com/xZl1952.png" alt="">
+⚡La siguiente vista solo esta disponible para usuarios Admin
 <img src="https://i.imgur.com/0PhGnBl.png" alt="">
-<img src="https://i.imgur.com/ABjwCzC.png" alt="">
-<img src="https://i.imgur.com/knJTHDp.png" alt="">
+
 ⚡El registro necesita de un email y una confirmacion de contraseña, hecho a prueba de errores puesto que no habran dos cuentas con el mismo correo electronico.
+
+
+<img src="https://i.imgur.com/ABjwCzC.png" alt="">
+⚡
+<img src="https://i.imgur.com/knJTHDp.png" alt="">
+
+⚡
+<img src="https://i.imgur.com/FaDHkZT.png" alt="">
+
+⚡Paga de manera segura con Paypal!
+
+<img src="https://i.imgur.com/SUHwXug.png" alt="">
+
 
 
 
