@@ -3,6 +3,7 @@
 
 # MERN project (E-COMMERCE)
 Un e-commerce sencillo y minimalista pensado para el mercado del aceite de argán.
+(La aplicación sigue en rama develop para seguir implementando mejoras y novedades con React)
 
 
 <img src="https://imgur.com/syfoOX2.png" alt=""  width="300" height="300" /> 
